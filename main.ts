@@ -1,5 +1,5 @@
 /**
- *  MCP23017-Interfacefunktionen
+ *  MCP23017-Interfacefunktionen für LEDs
  */
 // Basierend auf der tollen Grundlagenseite 
 // http://robert-fromm.info/?post=elec_i2c_calliope
@@ -7,9 +7,9 @@
 // Als Makecode / pxt-Paket 28.07.2019 M. Klein v0.9
 
 const enum State {
-    //% block="ON"
+    //% block="an"
     High = 1,
-    //% block="OFF"
+    //% block="aus"
     Low = 0
 }
 
@@ -75,9 +75,6 @@ const enum BITS {                    //
 let BitwertA = 0;
 let BitwertB = 0;
 
-/**
- * Benutzerdefinierte Blöcke
- */
 //% weight=100 color=#0fbc11 icon="\uf2db"
 
 namespace MCP23017 {
@@ -87,7 +84,7 @@ namespace MCP23017 {
      * and the pull-ups to high
      */
     //% blockId="initMCP23017LED"
-    //% block="init MCP23017 for LEDs"
+    //% block="programmiere den MCP23017 für LEDs"
     //% weight=89
     export function initMCP23017LED(): void {
         // Alle Register auf Ausgabe stellen
@@ -99,11 +96,12 @@ namespace MCP23017 {
     }
 
     /**
-     * Sets LEDs 1 to 16 to either on or off.
+     * Schaltet alle LEDs an oder aus.
+     * MCP23017 muss vorher für LEDs programmiert sein.
      * @param level digital pin level, either 0 or 1
      */
     //% blockId="setLeds"
-    //% block="set all LEDs %zustand"
+    //% block="schalte alle LEDs %zustand"
     //% weight=90
     export function setLeds(zustand: State): void {
         for (let i = 1; i <= 16; i++) {
@@ -112,13 +110,13 @@ namespace MCP23017 {
     }
 
     /**
-     * Sets one LED to either on or off. 
-     * IOExpander must be configured as LED.
+     * Schaltet eine LED an oder aus. 
+     * MCP23017 muss vorher für LEDs programmiert sein.
      * @param name name of the pin in the range from 1 to 16, eg: 1
      * @param zustand state, either ON or OFF
      */
     //% blockId="setLed"
-    //% block="set LED %name | to %zustand"
+    //% block="schalte LED %name | auf %zustand"
     //% name.min=1 name.max=16
     //% weight=91
 
