@@ -23,7 +23,7 @@ https://www.hackster.io/MKlein/calliope-mini-i2c-io-expander-ffda4d
 
  Robert Fromm http://robert-fromm.info/?post=elec_i2c_calliope & Michael Klein
  
- MIT License: loops.ts by Philipp Henkel (doesn´t work with th calliope V0 core.
+ MIT License: loops.ts by Philipp Henkel (doesn´t work with the calliope V0 core)
 
 ## Supported targets
 
