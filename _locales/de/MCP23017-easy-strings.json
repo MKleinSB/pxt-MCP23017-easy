@@ -1,5 +1,4 @@
-{
-    "State.High|block": "An",
+{   "State.High|block": "An",
     "State.Low|block": "Aus",
     "MCP23017.initMCP23017LED|block": "initialisiere den MCP23017 für LEDs",
     "MCP23017.setLeds|block": "schalte alle LEDs %zustand",
