@@ -9,7 +9,8 @@
     "files": [
         "README.md",
         "main.ts",
-        "loops.ts"
+        "loops.ts",
+        "_locales/de/pxt-MCP23017-easy-strings.json"
     ],
     "testFiles": [
         "test.ts"
