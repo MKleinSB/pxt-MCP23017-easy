@@ -1,24 +1,15 @@
 # pxt-mcp23017-easy
 
-
-
-## TODO
-
-- [ ] Add a reference for your blocks here
-- [ ] Add "icon.png" image (300x200) in the root folder
-- [ ] Add "- beta" to the GitHub project description if you are still iterating it.
-- [ ] Turn on your automated build on https://travis-ci.org
-- [ ] Use "pxt bump" to create a tagged release on GitHub
-- [ ] Get your package reviewed and approved https://makecode.microbit.org/packages/approval
-
-Read more at https://makecode.microbit.org/packages/build-your-own
+This extension provides easy to use blocks for the MCP23017 GPIO Extender
+You can easily turn on or off LEDs.
+Additionally it provides a new for-loop by Philipp Henkel
 
 ## License
-
-
+ (cc) Creative Commons Robert Fromm & Michael Klein 
+ MIT License: loops.ts by Philipp Henkel
 
 ## Supported targets
 
 * for PXT/microbit
-(The metadata above is needed for package search.)
+* for PXT/calliope
 
