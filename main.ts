@@ -83,7 +83,7 @@ let BitwertB = 0;
 namespace MCP23017 {
 
     /**
-     * Sets the Registers of the MCP23017 to write
+     * Sets the Registers of the MCP23017 to write 
      * and the pull-ups to high
      */
     //% blockId="initMCP23017LED"
@@ -112,7 +112,7 @@ namespace MCP23017 {
     }
 
     /**
-     * Sets one LED to either on or off.
+     * Sets one LED to either on or off. 
      * IOExpander must be configured as LED.
      * @param name name of the pin in the range from 1 to 16, eg: 1
      * @param zustand state, either ON or OFF
