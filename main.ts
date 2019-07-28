@@ -6,14 +6,14 @@
 // (cc) Creative Commons Robert Fromm 2017
 // Als Makecode / pxt-Paket 28.07.2019 M. Klein v0.9
 
-enum State {
+const enum State {
     //% block="ON"
     High = 1,
     //% block="OFF"
     Low = 0
 }
 
-enum REG_MCP {
+const enum REG_MCP {
     //% Bitmuster um Register A zu beschreiben
     Bitmuster_A = 0x12,
     //% Bitmuster um Register B zu beschreiben
@@ -28,7 +28,7 @@ enum REG_MCP {
     PullUp_Widerstaende_B = 0x0D
 }
 
-enum ADDRESS {                // Adresse des MCP23017
+const enum ADDRESS {                // Adresse des MCP23017
     //% block=0x20
     A20 = 0x20,               // Standardwert
     //% block=0x21
@@ -46,7 +46,7 @@ enum ADDRESS {                // Adresse des MCP23017
     //% block=0x27
     A27 = 0x27                // 
 }
-enum BITS {                    //
+const enum BITS {                    //
     //% block=11111111
     Alle = 0xff,               // 
     //% block=00000000
