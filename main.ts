@@ -7,9 +7,9 @@
 // Als Makecode / pxt-Paket 28.07.2019 M. Klein v0.9
 
 const enum State {
-    //% block="an"
+    //% block="On"
     High = 1,
-    //% block="aus"
+    //% block="Off"
     Low = 0
 }
 
@@ -101,7 +101,7 @@ namespace MCP23017 {
      * @param level digital pin level, either 0 or 1
      */
     //% blockId="setLeds"
-    //% block="schalte alle LEDs %zustand"
+    //% block="turn all LEDs %zustand"
     //% weight=90
     export function setLeds(zustand: State): void {
         for (let i = 1; i <= 16; i++) {
@@ -116,7 +116,7 @@ namespace MCP23017 {
      * @param zustand state, either ON or OFF
      */
     //% blockId="setLed"
-    //% block="schalte LED %name | auf %zustand"
+    //% block="turn LED %name | to %zustand"
     //% name.min=1 name.max=16
     //% weight=91
 
