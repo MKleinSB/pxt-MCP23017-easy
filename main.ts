@@ -84,7 +84,7 @@ namespace MCP23017 {
      * and the pull-ups to high
      */
     //% blockId="initMCP23017LED"
-    //% block="programmiere den MCP23017 für LEDs"
+    //% block="program the MCP23017 for LEDs"
     //% weight=89
     export function initMCP23017LED(): void {
         // Alle Register auf Ausgabe stellen
@@ -116,7 +116,7 @@ namespace MCP23017 {
      * @param zustand state, either ON or OFF
      */
     //% blockId="setLed"
-    //% block="turn LED %name | to %zustand"
+    //% block="turn LED %name | %zustand"
     //% name.min=1 name.max=16
     //% weight=91
 
