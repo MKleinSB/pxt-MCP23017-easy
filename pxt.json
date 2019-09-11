@@ -1,5 +1,5 @@
 {
-    "name": "pxt-mcp23017-easy",
+    "name": "pxt-MCP23017-easy",
     "version": "0.0.14",
     "description": "Easy to use Blocks for the MCP23017 IO-Extender",
     "license": "MIT",
