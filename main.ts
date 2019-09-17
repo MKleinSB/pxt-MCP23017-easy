@@ -86,7 +86,7 @@ namespace MCP23017 {
      */
     //% blockId="initMCP23017LED"
     //% block="program the MCP23017 for LEDs"
-    //% weight=91
+    //% weight=80
     //% group="On Start"
     export function initMCP23017LED(): void {
         // Alle Register auf Ausgabe stellen
