@@ -86,7 +86,7 @@ namespace MCP23017 {
      */
     //% blockId="initMCP23017LED"
     //% block="program the MCP23017 for LEDs"
-    //% weight=89
+    //% weight=91
     //% group="On Start"
     export function initMCP23017LED(): void {
         // Alle Register auf Ausgabe stellen
@@ -104,7 +104,7 @@ namespace MCP23017 {
      */
     //% blockId="setLeds"
     //% block="turn all LEDs %zustand"
-    //% weight=90
+    //% weight=87
     //% group="LEDs"
     export function setLeds(zustand: State): void {
         for (let i = 1; i <= 16; i++) {
@@ -121,7 +121,7 @@ namespace MCP23017 {
     //% blockId="setLed"
     //% block="turn LED %name | %zustand"
     //% name.min=1 name.max=16
-    //% weight=91
+    //% weight=88
     //% group="LEDs"
 
     export function setLed(name: number, zustand: State): void {
