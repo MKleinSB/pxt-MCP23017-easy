@@ -76,6 +76,7 @@ let BitwertA = 0;
 let BitwertB = 0;
 
 //% weight=100 color=#0fbc11 icon="\uf2db"
+//% groups=["On Start", "LEDs"]
 
 namespace MCP23017 {
 
@@ -86,6 +87,7 @@ namespace MCP23017 {
     //% blockId="initMCP23017LED"
     //% block="program the MCP23017 for LEDs"
     //% weight=89
+    //% group="On Start"
     export function initMCP23017LED(): void {
         // Alle Register auf Ausgabe stellen
         MCP23017.writeRegister(ADDRESS.A20, REG_MCP.EinOderAusgabe_A, MCP23017.bitwert(BITS.keiner))
@@ -103,6 +105,7 @@ namespace MCP23017 {
     //% blockId="setLeds"
     //% block="turn all LEDs %zustand"
     //% weight=90
+    //% group="LEDs"
     export function setLeds(zustand: State): void {
         for (let i = 1; i <= 16; i++) {
             setLed(i, zustand);
@@ -119,6 +122,7 @@ namespace MCP23017 {
     //% block="turn LED %name | %zustand"
     //% name.min=1 name.max=16
     //% weight=91
+    //% group="LEDs"
 
     export function setLed(name: number, zustand: State): void {
         if (name < 1 || name > 16) {
